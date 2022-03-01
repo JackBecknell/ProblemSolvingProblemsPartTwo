@@ -1,3 +1,7 @@
+#TEST ZONE
+#END TEST ZONE
+
+
 #To be a good problem solver, it is important to be able to break problems down. One way to go about this is to write 
 # out the steps it will take to solve the problem. These steps are written down in English in a manner that are easily
 #  explainable to someone who may not be technical. The idea is that in order to code something out, you first need to
@@ -16,6 +20,7 @@
 
 #c. Write a method that determines if a number is happy or sad
 #Below is our list we continualy add our sums into until we find out if the original number is happy or not.
+
 
 checks_for_failures = []
 #Below is our function we use to compare our next sum vs the numbers that have already been added to it.
@@ -39,7 +44,7 @@ def convert_string_to_integer_list(num):
             list_of_digits.append(number) 
         square_each_number(list_of_digits)
 
-#WORKSBelow is our function that squares each number that is in list format
+#Below is our function that squares each number that is in list format
 def square_each_number(integer_list):
     length = len(integer_list)
     for index in range(length):
@@ -55,9 +60,36 @@ convert_string_to_integer_list(input("Insert number to check if it's happy: "))
 #2. Prime Numbers
 
 #a. A prime number is a number that is only divisible by one and itself.
-
+        
 #b. Write a method that prints out all prime numbers between 1 and 100
+def find_the_prime_nums(list):
+    full_list_of_primes = []
+    for num in list:
+        if num == 0 or num == 1:
+            continue
+        elif num == 2:
+            full_list_of_primes.append(num)  
+            continue
+        number_designated = False
+        if num > 1:
+            while number_designated == False:
+                for index in range(2, num+1):
+                    if (num % index == 0):
+                        if (index) == num:
+                            full_list_of_primes.append(num)
+                            number_designated = True
+                        else:
+                            number_designated = True
+                            break
+               
+        
+                
+                    
+    return full_list_of_primes
+                    
 
+prime_numbers_1_through_100 = find_the_prime_nums([num for num in range(101)])
+print(prime_numbers_1_through_100)
 #3. Fibonacci
 
 #a. A series of numbers in which each number (Fibonacci number) is the sum of the two preceding numbers. The simplest 
