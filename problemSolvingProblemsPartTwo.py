@@ -1,6 +1,7 @@
 
 #TASK 1: HAPPY NUMBERS 
-
+# A happy number is a number defined by the following process: starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1. An example of a happy number is 19
+# Write a method that determines if a number is happy or sad
 #LIST OF STEPS
 # 1. Declare function 'convert_string_to_integer_list' with on parameter 'num'
 # 2. Inside the function create a list ('list_of_digits') which converts the characters in the printed string into individual list items.
@@ -60,8 +61,8 @@ convert_string_to_integer_list(original_number)
 
 
 #TASK 2: Prime Numbers
-#a. A prime number is a number that is only divisible by one and itself.       
-#b. Write a method that prints out all prime numbers between 1 and 100
+# A prime number is a number that is only divisible by one and itself.       
+# Write a method that prints out all prime numbers between 1 and 100
 #LIST OF STEPS
 # 1. Declare a funtion to find the prime numbers in a list that is passed in.
 # 2. Inside the function declare a variable to store a new updated list with all the found prime numbers.
@@ -103,6 +104,9 @@ def find_the_prime_nums(list):
 prime_numbers_1_through_100 = find_the_prime_nums([num for num in range(101)])
 
 #TASK 3: Fibonacci (I believe I did the hard version, but it seemed too easy so let me known if I actually just did the normal version)
+# A series of numbers in which each number (Fibonacci number) is the sum of the two preceding numbers. The simplest is the series 1, 1, 2, 3, 5, 8, etc.
+# Write a method that does the Fibonacci sequence starting at 1
+# HARDER VERSION: Write a method that does the Fibonacci sequence starting at a number that a user input
 #LIST OF STEPS
 # 1. Declare funtion to start a fibonacci sequence off of one 'start' number and set a parameter to recieve a user input number.
 # 2. Inside the funtion declare your first variable and set it equal to the number passed in.
